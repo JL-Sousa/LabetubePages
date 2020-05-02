@@ -6,49 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Labetube</title>
     <link href="./src/css/index.css" rel="stylesheet">
+    <script type="text/javascript" src="src/js/index.js"></script>
 
 </head>
 
 <body>
     <header>
-        <h1>Labetube</h1>
-        <input type="search" placeholder="Buscar" autofocus>
+        <div id="logo-video">
+            <img src="src/icons/logo-video.png" />
+            <h1>Labetube</h1>
+        </div>
+        <input class="input" type="search" placeholder="Buscar" autofocus>
 
     </header>
-    <main>
-        <div class="itens-de-1-4">
-            <img src="./src/img/natureza.png">
-            <a href="./natureza.html">Natureza</a>
-        </div>
-        <div class="itens-de-1-4">
-            <img src="./src/img/frutas.png">
-            <a>Frutas</a>
-        </div>
-        <div class="itens-de-1-4">
-            <img src="./src/img/planeta-terra.png">
-            <a>Planeta Terra</a>
-        </div>
-        <div class="itens-de-1-4">
-            <img src="./src/img/universo.png">
-            <a href="./universo.html">Universo</a>
-        </div>
-        <div>
-            <img src="./src/img/gamer.png">
-            <a> Gamer</a>
-        </div>
-        <div>
-            <img src="./src/img/super-mario.png">
-            <a>Super Mario</a>
-        </div>
-        <div>
-            <img src="./src/img/lazer.png">
-            <a>Lazer</a>
-        </div>
-        <div>
-            <img src="./src/img/home-oficce.png">
-            <a>Home Office</a>
-        </div>
-    </main>
+    <div id="container-principal">
+        <nav id="menu-navegacao">
+            <ul id="menu-lista">
+                <li>
+                    <a href=""><img class="icons" src="src/icons/inicio.png">Inicío</a>
+                </li>
+                <li>
+                    <a href=""><img class="icons" src="src/icons/alta.png">Em alta</a>
+                </li>
+                <li>
+                    <a href=""><img class="icons" src="src/icons/inscricoes.png">Incrições</a>
+                </li>
+                <li>
+                    <a href=""><img class="icons" src="src/icons/biblioteca.png">Biblioteca</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="itens-de-1-4">
+                <img src="./src/img/natureza.png">
+                <a href="./natureza.html">Natureza</a>
+            </div>
+            <div class="itens-de-1-4">
+                <img src="./src/img/frutas.png">
+                <a href="#" onmousedown="avisoDoVideo()">Frutas</a>
+            </div>
+            <div class="itens-de-1-4">
+                <img src="./src/img/planeta-terra.png">
+                <a href="#" onmousedown="avisoDoVideo()">Planeta Terra</a>
+            </div>
+            <div class="itens-de-1-4">
+                <img src="./src/img/universo.png">
+                <a href="./universo.html">Universo</a>
+            </div>
+            <div>
+                <img src="./src/img/gamer.png">
+                <a href="#" onmousedown="avisoDoVideo()"> Gamer</a>
+            </div>
+            <div>
+                <img src="./src/img/super-mario.png">
+                <a href="#" onmousedown="avisoDoVideo()">Super Mario</a>
+            </div>
+            <div>
+                <img src="./src/img/lazer.png">
+                <a href="#" onmousedown="avisoDoVideo()">Lazer</a>
+            </div>
+            <div>
+                <img src="./src/img/home-oficce.png">
+                <a href="#" onmousedown="avisoDoVideo()">Home Office</a>
+            </div>
+        </main>
+    </div>
 
     <footer>
         <p>labetube vídeos fantátiscos</p>
