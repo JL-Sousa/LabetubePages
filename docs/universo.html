@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universo</title>
     <link href="./src/css/global.css" rel="stylesheet">
+    <script type="text/javascript" src="src/js/script.js"></script>
 </head>
 
 <body>
@@ -16,12 +17,56 @@
         </div>
         <input type="text" placeholder="Buscar">
     </header>
-    <main>
-        <h3>Universo</h3>
-        <video class="video" autoplay controls>
-            <source src="https://storage.googleapis.com/future-apis.appspot.com/7.mp4" type="video/mp4" />
-        </video>
-    </main>
+    <div class="container-principal fundo-da-tela-video">
+        <nav id="menu-navegacao">
+            <ul id="menu-lista">
+                <li>
+                    <a href="./index.html"><img class="icons" src="src/icons/inicio.png">Inicío</a>
+                </li>
+                <li>
+                    <a href=""><img class="icons" src="src/icons/alta.png">Em alta</a>
+                </li>
+                <li>
+                    <a href=""><img class="icons" src="src/icons/inscricoes.png">Incrições</a>
+                </li>
+                <li>
+                    <a href=""><img class="icons" src="src/icons/biblioteca.png">Biblioteca</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="main-video">
+            <video class="video" autoplay controls>
+                <source src="https://storage.googleapis.com/future-apis.appspot.com/7.mp4" type="video/mp4" />
+            </video>
+            <article class="descricao-video">
+                <h2>Universo no espaço</h2>
+                <article class="area-curtir-descurtir">
+                    <div>
+                        <button onclick=curtirVideo()>Curtir</button>
+                        <span id="curtir">0</span>
+                    </div>
+                    <div>
+                        <button onclick=descurtirVideo()>Descutir</button>
+                        <span id="descurtir">0</span>
+                    </div>
+                </article>
+            </article>
+        </main>
+        <article class="outros-videos">
+            <article class="lista-videos">
+                <img src="./src/img/lazer.png">
+                <a href="./lazer.html">Lazer</a>
+            </article>
+            <article class="lista-videos">
+                <img src="./src/img/natureza.png">
+                <a href="./natureza.html">Natureza</a>
+            </article>
+            <article class="lista-videos">
+                <img src="./src/img/home-oficce.png">
+                <a href="#" onmousedown="avisoDoVideo()">Home Office</a>
+            </article>
+        </article>
+    </div>
 
     <footer>
         <p>labetube vídeos fantátiscos</p>
